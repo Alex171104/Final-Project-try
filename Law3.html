@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+</head>
+<style>
+    .clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
+</style>
+<body style="background-color: rgb(255,248,248);">
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255,248,248) ;">
+        <div class="container px-5"> 
+            <a class="navbar-brand" href="Law2.html"><img class="rounded-circle img-fluid" src="arrow-bar-left.svg" width="60" > </a>
+        </div>
+    </nav>
+    
+<br>
+
+<div class="mx-auto d-block" style="background-color:rgb(209,144,168); text-align:center; border-radius: 0px 0px 20px 20px; width: 45rem; height: 30px;">
+    <p><h3 style="color:white">Pick A Date</h3></p>
+</div>
+<br>
+<div class="card mx-auto d-block" style="text-align:center; border-radius: 30px; width: 45rem;">
+    <div class="calendar p-5"  style="background-color:rgb(209,144,168);">
+        <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+          <h2 class="month font-weight-bold mb-0 text-uppercase" style="color: white;">November 2022</h2>
+        </div>
+        
+        <br>
+
+        <ol class="day-names list-unstyled" style="color: white;">
+          <li class="font-weight-bold text-uppercase">Sun</li>
+          <li class="font-weight-bold text-uppercase">Mon</li>
+          <li class="font-weight-bold text-uppercase">Tue</li>
+          <li class="font-weight-bold text-uppercase">Wed</li>
+          <li class="font-weight-bold text-uppercase">Thu</li>
+          <li class="font-weight-bold text-uppercase">Fri</li>
+          <li class="font-weight-bold text-uppercase">Sat</li>
+        </ol>
+    
+        <ol class="days list-unstyled" style="color: white;">
+          <li>
+            <div class="date">1</div>
+          </li>
+          <li>
+            <div class="date">2</div>
+          </li>
+          <li>
+            <div class="date">3</div>
+          </li>
+          <li>
+            <div class="date">4</div>
+          </li>
+          <li>
+            <div class="date">5</div>
+          </li>
+          <li>
+            <div class="date">6</div>
+          </li>
+          <li>
+            <div class="date">7</div>
+          </li>
+          <li>
+            <div class="date">8</div>
+          </li>
+          <li>
+            <div class="date">9</div>
+          </li>
+          <li>
+            <div class="date">10</div>
+          </li>
+          <li>
+            <div class="date">11</div>
+          </li>
+          <li>
+            <div class="date">12</div>
+          </li>
+          <li>
+            <div class="date">13</div>
+          </li>
+          <li>
+            <div class="date">14</div>
+          </li>
+          <li>
+            <div class="date">15</div>
+          </li>
+          <li>
+            <div class="date">16</div>
+          </li>
+          <li>
+            <div class="date">17</div>
+          </li>
+          <li>
+            <div class="date">18</div>
+          </li>
+          <li>
+            <div class="date">19</div>
+          </li>
+          <li>
+            <div class="date">20</div>
+          </li>
+          <li>
+            <div class="date">21</div>
+          </li>
+          <li>
+            <div class="date">22</div>
+          </li>
+          <li>
+            <div class="date">23</div>
+          </li>
+          <li>
+            <div class="date">24</div>
+          </li>
+          <li>
+            <div class="date">25</div>
+          </li>
+          <li>
+            <div class="date">26</div>
+          </li>
+          <li>
+            <div class="date">27</div>
+          </li>
+          <li>
+            <div class="date">28</div>
+          </li>
+          <li>
+            <div class="date">29</div>
+          </li>
+          <li>
+            <div class="date">30</div>
+          </li>
+          <li>
+            <div class="date">31</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+</div>
+<br>
+
+<div class="mx-auto d-block" style="background-color:rgb(209,144,168); text-align:center; border-radius: 10px; width: 35rem; height: 30px;">
+    <p><h3 style="color:white">Pick A Time</h3></p>
+</div>
+
+<br>
+
+<div class="container" style="background-color:rgb(255,248,248); width: 25rem; height: 50px;">
+    <div style="position: relative;">
+        <input class="form-control" type="text" id="datetime" style="text-align: center;" />
+    </div>
+</div>
+
+<script>
+    $('#datetime').datetimepicker({
+        format: 'hh:mm:ss a'
+    });
+</script>
+
+<br>
+
+<div class="card mx-auto d-block" style="background-color:rgb(255,248,248); text-align:center; border-radius: 10px; width: 45rem; height: 40px; border-color: rgb(209,144,168);">
+    <a href="Law4.html" class="link" style="color: rgb(209,144,168); text-decoration: none;">
+    <h4 style="color: rgb(209,144,168);">Submit</h4></a>
+</div>
+
+
+<br>
+
+</body>
+
+<footer class="py-5 bg-dark mx-auto d-block" id="contact">
+<div class="container px-5"><p class="m-0 text-center text-white">Copyright Mealth 2022</p></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://startbootstrap.com/solution/contact-forms"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</html>
